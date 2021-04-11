@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中移云相册</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+            <div class="select" , id="select">
+    
+            </div>
+            <div class="setting_on_new" , id="setting_on_new">
+                
+            </div>
+        <div class="select_pic" , id = "select_pic">
+
+        </div>
+        <div class="preview" , id = "preview">
+        </div>
+    </div>
+        
+    <script>
+        var leftwidth = window.innerWidth - 0.3*screen.availWidth;
+        var left_down_height = window.innerHeight - 0.09*screen.availHeight - 62;
+        var rightheight = window.innerHeight - 62 - 0.27*screen.availHeight;
+        var rightwidth = 0.3*screen.availWidth;
+        var left_up_height = 0.09*screen.availHeight;
+        var right_up_height = 0.27*screen.availHeight;
+        var ele_preview = document.getElementById("preview");
+        var ele_select_pic = document.getElementById("select_pic");
+        var ele_select = document.getElementById("select");
+        var ele_set_new = document.getElementById("setting_on_new");
+        ele_select.style.width = String(leftwidth) + "px";
+        ele_select_pic.style.height = String(left_down_height) + "px";
+        ele_select_pic.style.width = String(leftwidth) + "px";
+        ele_preview.style.height = String(rightheight) + "px";
+        ele_set_new.style.width = String(rightwidth) + "px";
+        ele_set_new.style.height = String(right_up_height) + "px";
+        ele_preview.style.width = String(rightwidth) + "px";
+        ele_select.style.height = String(left_up_height) + "px";
+        window.onresize = function reshadow() {
+            var leftwidth = window.innerWidth - 0.3*screen.availWidth;
+            var left_down_height = window.innerHeight - 0.09*screen.availHeight - 62;
+            var rightheight = window.innerHeight - 62 - 0.27*screen.availHeight;
+            var rightwidth = 0.3*screen.availWidth;
+            var left_up_height = 0.09*screen.availHeight;
+            var right_up_height = 0.27*screen.availHeight;
+            var ele_preview = document.getElementById("preview");
+            var ele_select_pic = document.getElementById("select_pic");
+            var ele_select = document.getElementById("select");
+            var ele_set_new = document.getElementById("setting_on_new");
+            ele_select.style.width = String(leftwidth) + "px";
+            ele_select_pic.style.height = String(left_down_height) + "px";
+            ele_select_pic.style.width = String(leftwidth) + "px";
+            ele_preview.style.height = String(rightheight) + "px";
+            ele_set_new.style.width = String(rightwidth) + "px";
+            ele_set_new.style.height = String(right_up_height) + "px";
+            ele_preview.style.width = String(rightwidth) + "px";
+            ele_select.style.height = String(left_up_height) + "px";
+        }
+    </script>
+</body>
+</html>

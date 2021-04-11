@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中移云相册</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+            <div class="select" , id="select">
+    
+            </div>
+            <div class="setting_on_new">
+                
+            </div>
+        <div class="select_pic" , id = "select_pic">
+
+        </div>
+        <div class="preview" , id = "preview">
+        </div>
+    </div>
+        
+    <script>
+        var winwidth = window.innerWidth - 300;
+        var winheight1 = window.innerHeight - 186;
+        var winheight2 = window.innerHeight - 62 - 248;
+        var  ele_preview = document.getElementById("preview");
+        var ele_select_pic = document.getElementById("select_pic");
+        var ele_select = document.getElementById("select");
+        ele_select.style.width = String(winwidth) + "px";
+        ele_select_pic.style.height = String(winheight1) + "px";
+        ele_select_pic.style.width = String(winwidth) + "px";
+        ele_preview.style.height = String(winheight2) + "px";
+        window.onresize = function reshadow() {
+            var winwidth = window.innerWidth - 300;
+            var winheight1 = window.innerHeight - 186;
+            var winheight2 = window.innerHeight - 62 - 248;
+            var  ele_preview = document.getElementById("preview");
+            var ele_select_pic = document.getElementById("select_pic");
+            var ele_select = document.getElementById("select");
+            ele_select.style.width = String(winwidth) + "px";
+            ele_select_pic.style.height = String(winheight1) + "px";
+            ele_select_pic.style.width = String(winwidth) + "px";
+            ele_preview.style.height = String(winheight2) + "px";
+        }
+    </script>
+</body>
+</html>
