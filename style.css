@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    height: 62px;
+    background-color: #3333cc;
+    width: auto;
+}
+
+.select{
+    float: left;
+    background-color: chocolate;
+}
+.setting_on_new{
+    float: right;
+    background-color: chartreuse;
+}
+.select_pic{
+    float: left;
+    background-color: aquamarine;
+}
+.preview{
+    float: right;
+    background-color: brown;
+}
